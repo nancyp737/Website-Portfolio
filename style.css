@@ -1,0 +1,94 @@
+/* CSS Document */
+
+@font-face {
+font-family: 'Motley Forces';
+	src: url('motley.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Cookbook';
+	src:url('cookbook.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Morning Breeze';
+	src: url('morningbreeze.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes slide{
+	 0%, 100% {
+    left: 0;
+  }
+  50% {
+    left: 10px;
+  }
+}
+
+@keyframes bouncing{
+	0%, 100%{
+    	top:0px;
+		color:lightpink;
+    }
+	20%, 80%{
+		top: -10px;
+	}
+	50%{
+		top: -20px;
+		color:deeppink;
+	}
+}
+
+body{
+	font-family: 'Morning Breeze';
+	font-size: 25px;
+}
+.subtitle{
+	font-family: 'Motley Forces';
+	color: palevioletred;
+}
+
+.box{
+	display: inline-block;
+	padding: 40px 0 0 0;
+	height: 300px;
+	width: 40%;
+	margin-left: 5%;
+	border: 5px outset pink;
+	box-shadow: 10px 30px 0 10px pink;
+	border-radius: 100px;
+	text-align: center;
+	vertical-align: top;
+	background-color: antiquewhite;
+}
+
+.box p{
+	padding: 0 20px;
+}
+#name span{
+	font-family: 'Motley Forces';
+	position: relative;
+	text-shadow: 0 1px #ccc;
+	animation: bouncing 0.5s ease-in infinite;
+	display: inline-flex;
+}
+
+
+#title{
+	font-family: 'Motley Forces';
+	color: pink;
+	font-size: 35px;
+	text-align: center;
+	position: relative;
+	animation: slide 2s ease-in-out infinite;
+}
+
+#silly:hover{
+	text-transform: uppercase;
+	
+}
